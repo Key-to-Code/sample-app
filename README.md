@@ -65,7 +65,7 @@ This project demonstrates the implementation of a **complete CI/CD pipeline** fo
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                          Developer Workflow                          │
+│                          Developer Workflow                         │
 └─────────────────────────────────────────────────────────────────────┘
                                   │
                     ┌─────────────┴─────────────┐
@@ -74,23 +74,23 @@ This project demonstrates the implementation of a **complete CI/CD pipeline** fo
               │   master   │            │    dev     │
               │   branch   │            │   branch   │
               └─────┬──────┘            └──────┬─────┘
-                    │                           │
-                    │ Push Trigger              │ Push Trigger
-                    │                           │
+                    │                          │
+                    │ Push Trigger             │ Push Trigger
+                    │                          │
         ┌───────────▼──────────┐    ┌──────────▼──────────┐
         │  sample-app-prod-    │    │  sample-app-dev-    │
         │  deploy (Trigger)    │    │  deploy (Trigger)   │
         └───────────┬──────────┘    └──────────┬──────────┘
-                    │                           │
+                    │                          │
         ┌───────────▼──────────┐    ┌──────────▼──────────┐
         │   Cloud Build        │    │   Cloud Build       │
-        │   (cloudbuild.yaml)  │    │ (cloudbuild-dev.yaml)│
+        │   (cloudbuild.yaml)  │    │(cloudbuild-dev.yaml)│
         └───────────┬──────────┘    └──────────┬──────────┘
-                    │                           │
-                    ├─ Build Docker Image       ├─ Build Docker Image
-                    ├─ Push to Artifact Registry├─ Push to Artifact Registry
+                    │                          │
+                    ├─ Build Docker Image      ├─ Build Docker Image
+                    ├─ Push to Artifact Registr├─ Push to Artifact Registry
                     ├─ Deploy to GKE           ├─ Deploy to GKE
-                    │                           │
+                    │                          │
         ┌───────────▼──────────┐    ┌──────────▼──────────┐
         │   GKE Cluster        │    │   GKE Cluster       │
         │   prod namespace     │    │   dev namespace     │
@@ -98,14 +98,14 @@ This project demonstrates the implementation of a **complete CI/CD pipeline** fo
         │   │ production-  │   │    │   │ development- │  │
         │   │ deployment   │   │    │   │ deployment   │  │
         │   └──────┬───────┘   │    │   └──────┬───────┘  │
-        │          │            │    │          │           │
+        │          │           │    │          │          │
         │   ┌──────▼───────┐   │    │   ┌──────▼───────┐  │
         │   │ LoadBalancer │   │    │   │ LoadBalancer │  │
         │   │  Service     │   │    │   │  Service     │  │
         │   └──────────────┘   │    │   └──────────────┘  │
         └──────────────────────┘    └─────────────────────┘
-                    │                           │
-                    │                           │
+                    │                          │
+                    │                          │
         ┌───────────▼──────────┐    ┌──────────▼──────────┐
         │   Production Users   │    │   Testing/QA Team   │
         └──────────────────────┘    └─────────────────────┘
@@ -790,11 +790,6 @@ Organizations implementing similar pipelines report:
 - [Kubernetes Official Documentation](https://kubernetes.io/docs/)
 - [Docker Best Practices](https://docs.docker.com/develop/dev-best-practices/)
 
-### Books
-- "The Phoenix Project" - Gene Kim (DevOps novel)
-- "Kubernetes in Action" - Marko Lukša
-- "Continuous Delivery" - Jez Humble & David Farley
-- "Site Reliability Engineering" - Google SRE Team
 
 ### Communities
 - CNCF (Cloud Native Computing Foundation)
