@@ -11,7 +11,7 @@
 
 This project is part of the **Google Cloud Skills Boost** program and represents successful completion of the **"Implement DevOps Workflows in Google Cloud"** skill badge challenge lab.
 
-**🏆 Verify Badge:** [View on Credly](https://www.credly.com/badges/fa6705ad-85d0-4441-a0d3-eada659ca0ce/public_url)
+** Verify Badge:** [View on Credly](https://www.credly.com/badges/fa6705ad-85d0-4441-a0d3-eada659ca0ce/public_url)
 
 ### What is a Google Cloud Skill Badge?
 
